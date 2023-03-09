@@ -55,7 +55,7 @@ function createProductElement(product) {
   productDiv.appendChild(size);
 
   const price = document.createElement('p');
-  price.textContent = `价格：¥${product.price}`;
+  price.textContent = `价格：${product.price}`;
   productDiv.appendChild(price);
 
   const description = document.createElement('p');
