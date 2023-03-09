@@ -28,10 +28,59 @@ img {
   margin-top: 32px;
 }
 
+body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #8B008B;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			font-size: 32px;
+			font-weight: bold;
+			text-shadow: 2px 2px #000;
+		}
+
+		nav {
+			background-color: #DCDCDC;
+			padding: 10px;
+			text-align: center;
+		}
+
+		nav a {
+			color: #000;
+			text-decoration: none;
+			padding: 10px;
+			border-radius: 5px;
+			margin-right: 10px;
+			transition: background-color 0.3s ease;
+		}
+
+		nav a:hover {
+			background-color: #8B008B;
+			color: #fff;
+		}
+
+		section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			padding: 20px;
+		}
+
   </style>
 </head>
 <body>
   <!-- 页面内容 -->
+  <header>卖茶壶的小女孩</header>
+	<nav>
+		<a href="index.html">所有商品</a>
+		<a href="contact.html">联系我们</a>
+	</nav>
   <div class="container">
   <h1>加微信联系客服了解更多优惠哦~</h1>
   <p>姓名：张三</p>
