@@ -112,7 +112,6 @@ window.onload = function () {
 		var button = document.createElement("button")
 
 		img.src = product.img
-
 		name.innerHTML = product.name
 		material.innerHTML = product.material
 		size.innerHTML = product.size
@@ -120,7 +119,7 @@ window.onload = function () {
 		button.innerHTML = "查看详情"
 		button.tag = i
 		button.addEventListener('click', function() {
-			window.location.href = "detail.html?id=" + this.tag + "&categroy=传统紫砂壶"
+			window.location.href = "detail.html?id=" + this.tag
 		})
 
 		

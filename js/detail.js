@@ -2,19 +2,19 @@ window.onload = function () {
 
 		// 获取页面元素
 	const productDetails = document.getElementById('detail');
-	const categoryH1 = document.getElementById('category');
+	// const categoryH1 = document.getElementById('category');
 
 	// 从 URL 参数中获取商品 ID 和分类
 	const searchParams = new URLSearchParams(location.search);
 	const id = searchParams.get('id');
-	const category = searchParams.get('category');
+	// const category = searchParams.get('category');
 
 	// 获取商品信息
 	const product = products[id]
 
 	// 更新页面标题和分类
-	document.title = `${product.name} - ${category}`;
-	categoryH1.textContent = category;
+	// document.title = `${product.name} - ${category}`;
+	// categoryH1.textContent = category;
 
 	// 创建商品详情元素
 	const productDiv = createProductElement(product);
@@ -70,32 +70,34 @@ function createProductElement(product) {
     const img = document.createElement('img');
     img.src = pictureUrl;
     picturesDiv.appendChild(img);
+    img.style.maxWidth = '30%';
     img.addEventListener('click', function() {
-    // create a new image element to display the enlarged image
-    const enlargedImg = document.createElement('img');
-    enlargedImg.src = pictureUrl;
-    enlargedImg.style.maxWidth = '90%'; // set the maximum width of the image
 
-    // create a new div to display the enlarged image
-    const enlargedImgDiv = document.createElement('div');
-    enlargedImgDiv.style.display = 'flex';
-    enlargedImgDiv.style.justifyContent = 'center';
-    enlargedImgDiv.style.alignItems = 'center';
-    enlargedImgDiv.style.position = 'fixed';
-    enlargedImgDiv.style.top = '0';
-    enlargedImgDiv.style.left = '0';
-    enlargedImgDiv.style.width = '100%';
-    enlargedImgDiv.style.height = '100%';
-    enlargedImgDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-    enlargedImgDiv.appendChild(enlargedImg);
+      //create a new image element to display the enlarged image
+      const enlargedImg = document.createElement('img');
+      enlargedImg.src = pictureUrl;
+      enlargedImg.style.maxWidth = '90%'; // set the maximum width of the image
+      enlargedImg.style.maxHeight = '50%';
+      // create a new div to display the enlarged image
+      const enlargedImgDiv = document.createElement('div');
+      enlargedImgDiv.style.display = 'flex';
+      enlargedImgDiv.style.justifyContent = 'center';
+      enlargedImgDiv.style.alignItems = 'center';
+      enlargedImgDiv.style.position = 'fixed';
+      enlargedImgDiv.style.top = '0';
+      enlargedImgDiv.style.left = '0';
+      enlargedImgDiv.style.width = '100%';
+      enlargedImgDiv.style.height = '100%';
+      enlargedImgDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+      enlargedImgDiv.appendChild(enlargedImg);
 
-    // add the enlarged image div to the document
-    document.body.appendChild(enlargedImgDiv);
+      // add the enlarged image div to the document
+      document.body.appendChild(enlargedImgDiv);
 
-    // add an event listener to the enlarged image div to close it when clicked
-    enlargedImgDiv.addEventListener('click', function() {
-      document.body.removeChild(enlargedImgDiv);
-    });
+      // add an event listener to the enlarged image div to close it when clicked
+      enlargedImgDiv.addEventListener('click', function() {
+        document.body.removeChild(enlargedImgDiv);
+      });
   });
   });
 
