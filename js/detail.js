@@ -13,7 +13,7 @@ window.onload = function () {
 	const product = products[id]
 
 	// 更新页面标题和分类
-	// document.title = `${product.name} - ${category}`;
+	document.title = `${product.name}`;
 	// categoryH1.textContent = category;
 
 	// 创建商品详情元素
