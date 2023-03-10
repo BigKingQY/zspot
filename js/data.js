@@ -1,16 +1,15 @@
 let products = [
 
 	{
-		img: "https://imgloc.com/i/oYvhC",
+		img: "res/2023031000001.jpg",
 		pictures: [
-			"https://imgloc.com/i/oYvhC",
-			"https://imgloc.com/i/oYsNE",
-			"https://imgloc.com/i/oY9uP",
-			"https://imgloc.com/i/oYKHX",
-			"https://imgloc.com/i/oYLet",
-			"https://imgloc.com/i/oYMTJ",
-			"https://imgloc.com/i/oYTkc",
-			"https://imgloc.com/i/oYaBA"
+			"res/2023031000002.jpg",
+			"res/2023031000003.jpg",
+			"res/2023031000004.jpg",
+			"res/2023031000005.jpg",
+			"res/2023031000006.jpg",
+			"res/2023031000007.jpg",
+			"res/2023031000008.jpg"
 		],
 		name: "扁西施",
 		material: "原矿特级紫朱泥",
@@ -19,14 +18,14 @@ let products = [
 		description: "扁西施.原矿特级紫朱泥.210cc.陈祖勇扁西施圆润饱满,玉雪可爱,壶身略扁更添敦厚古朴精神。"
 	},
 	{
-		img: "https://imgloc.com/i/oYaBA",
+		img: "res/2023031000101.jpg",
 		pictures: [
-			"https://imgloc.com/i/oYaBA",
-			"https://imgloc.com/i/oY19o",
-			"https://imgloc.com/i/oYYAN",
-			"https://imgloc.com/i/oYqrV",
-			"https://imgloc.com/i/oYuhd",
-			"https://imgloc.com/i/oqiZb"
+			"res/2023031000101.jpg",
+			"res/2023031000102.jpg",
+			"res/2023031000103.jpg",
+			"res/2023031000104.jpg",
+			"res/2023031000105.jpg",
+			"res/2023031000106.jpg",
 		],
 		name: "古莲子·精品",
 		material: "紫砂泥",
@@ -35,14 +34,14 @@ let products = [
 		description: "壶身简洁明快，流畅自然。由精选原矿紫泥制成，细腻润泽，雅致深韵。弯流嘴出水干脆利落，耳形壶把拿握有力。"
 	},
 	{
-		img: "https://imgloc.com/i/oqVHq",
+		img: "res/2023031000201.jpg",
 		pictures: [
-			"https://imgloc.com/i/oqVHq",
-			"https://imgloc.com/i/oqfez",
-			"https://imgloc.com/i/oqyaw",
-			"https://imgloc.com/i/oqAka",
-			"https://imgloc.com/i/oqDBx",
-			"https://imgloc.com/i/oqUJk"
+			"res/2023031000201.jpg",
+			"res/2023031000202.jpg",
+			"res/2023031000203.jpg",
+			"res/2023031000204.jpg",
+			"res/2023031000205.jpg",
+			"res/2023031000206.jpg",
 		],
 		name: "七饼茶叶罐",
 		material: "陶瓷",
@@ -51,15 +50,14 @@ let products = [
 		description: "原矿段泥，手绘山水"
 	},
 	{
-		img: "https://imgloc.com/i/oqtAL",
+		img: "res/2023031000301.jpg",
 		pictures: [
-			"https://imgloc.com/i/oqtAL",
-			"https://imgloc.com/i/oqWrp",
-			"https://imgloc.com/i/oqk5U",
-			"https://imgloc.com/i/oqCZv",
-			"https://imgloc.com/i/oqlO3",
-			"https://imgloc.com/i/oqwzy",
-			"https://imgloc.com/i/oq2a5"
+			"res/2023031000301.jpg",
+			"res/2023031000302.jpg",
+			"res/2023031000303.jpg",
+			"res/2023031000304.jpg",
+			"res/2023031000305.jpg",
+			"res/2023031000306.jpg",
 		],
 		name: "六个壶",
 		material: "精品紫砂",

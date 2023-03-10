@@ -70,7 +70,7 @@ function createProductElement(product) {
     const img = document.createElement('img');
     img.src = pictureUrl;
     picturesDiv.appendChild(img);
-    img.style.maxWidth = '30%';
+    img.style.maxWidth = '25%';
     img.addEventListener('click', function() {
 
       //create a new image element to display the enlarged image
