@@ -81,7 +81,7 @@ function createProductElement(product) {
       video.src = product.video; // 设置视频文件的 URL
       video.controls = true; // 显示视频控件
       video.autoplay = true; // 自动播放视频
-      video.style.width = "60%"
+      video.style.width = "80%"
       video.style.display = "inline-block"
       picturesDiv.appendChild(video); 
   }
@@ -91,7 +91,7 @@ function createProductElement(product) {
     const img = document.createElement('img');
     img.src = pictureUrl;
     picturesDiv.appendChild(img);
-    img.style.maxWidth = '60%';
+    img.style.maxWidth = '80%';
     img.display = "block"
     img.addEventListener('click', function() {
 
