@@ -43,7 +43,7 @@ function createProductElement(product) {
   const productDiv = document.createElement('div');
 
   const detail = document.createElement('h2');
-  detail.textContent = '商品详情';
+  detail.textContent = '细节展示';
   productDiv.appendChild(detail);
 
   const name = document.createElement('p');
@@ -58,9 +58,9 @@ function createProductElement(product) {
   size.textContent = `规格：${product.size}`;
   productDiv.appendChild(size);
 
-  const price = document.createElement('p');
-  price.textContent = `价格：${product.price}`;
-  productDiv.appendChild(price);
+  // const price = document.createElement('p');
+  // price.textContent = `价格：${product.price}`;
+  // productDiv.appendChild(price);
 
   const description = document.createElement('p');
   description.textContent = product.description;

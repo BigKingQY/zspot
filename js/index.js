@@ -29,7 +29,7 @@ window.onload = function () {
 		var name = document.createElement("h3")
 		var material = document.createElement("p")
 		var size = document.createElement("p")
-		var price = document.createElement("p")
+		// var price = document.createElement("p")
 		var button = document.createElement("button")
 
 		img.src = product.img
@@ -43,7 +43,7 @@ window.onload = function () {
 		name.innerHTML = product.name
 		material.innerHTML = product.material
 		size.innerHTML = product.size
-		price.innerHTML = product.price
+		// price.innerHTML = product.price
 		button.innerHTML = "查看详情"
 		button.tag = i
 		button.addEventListener('click', function() {
@@ -55,7 +55,7 @@ window.onload = function () {
 		productDiv.appendChild(name)
 		productDiv.appendChild(material)
 		productDiv.appendChild(size)
-		productDiv.appendChild(price)
+		// productDiv.appendChild(price)
 		productDiv.appendChild(button)
 		productDiv.className = "product"
 	
