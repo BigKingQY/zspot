@@ -11,6 +11,7 @@ let products = [
 			"res/2023031000007.jpg",
 			"res/2023031000008.jpg"
 		],
+		"video":"video/video_20230311000001.mp4",
 		name: "扁西施",
 		material: "原矿特级紫朱泥",
 		size: "220cc",
@@ -20,7 +21,6 @@ let products = [
 	{
 		img: "res/2023031000101.jpg",
 		pictures: [
-			"res/2023031000101.jpg",
 			"res/2023031000102.jpg",
 			"res/2023031000103.jpg",
 			"res/2023031000104.jpg",

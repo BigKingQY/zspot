@@ -1,5 +1,7 @@
 window.onload = function () {
 
+  const body = document.getElementById('body');
+
 		// 获取页面元素
 	const productDetails = document.getElementById('detail');
 	// const categoryH1 = document.getElementById('category');
@@ -22,6 +24,8 @@ window.onload = function () {
 	// 添加商品详情元素到页面
 	productDetails.appendChild(productDiv);
 
+  // centerImages();
+
 }
 
 // 获取商品信息
@@ -35,8 +39,8 @@ function getProductById(id) {
 
 // 创建商品详情元素
 function createProductElement(product) {
+
   const productDiv = document.createElement('div');
-  productDiv.className = 'product';
 
   const detail = document.createElement('h2');
   detail.textContent = '商品详情';
@@ -51,7 +55,7 @@ function createProductElement(product) {
   productDiv.appendChild(material);
 
   const size = document.createElement('p');
-  size.textContent = `尺寸：${product.size}`;
+  size.textContent = `规格：${product.size}`;
   productDiv.appendChild(size);
 
   const price = document.createElement('p');
@@ -62,15 +66,33 @@ function createProductElement(product) {
   description.textContent = product.description;
   productDiv.appendChild(description);
 
+
+  
+
   const picturesDiv = document.createElement('div');
-  picturesDiv.className = 'product-pictures';
+  picturesDiv.style.textAlign = "center"
   productDiv.appendChild(picturesDiv);
 
+  if ("video" in product)
+  {
+    // console.log("video" in products)
+      const video = document.createElement("video");
+
+      video.src = product.video; // 设置视频文件的 URL
+      video.controls = true; // 显示视频控件
+      video.autoplay = true; // 自动播放视频
+      video.style.width = "60%"
+      video.style.display = "inline-block"
+      picturesDiv.appendChild(video); 
+  }
+
   product.pictures.forEach(pictureUrl => {
+
     const img = document.createElement('img');
     img.src = pictureUrl;
     picturesDiv.appendChild(img);
-    img.style.maxWidth = '25%';
+    img.style.maxWidth = '60%';
+    img.display = "block"
     img.addEventListener('click', function() {
 
       //create a new image element to display the enlarged image
@@ -103,3 +125,4 @@ function createProductElement(product) {
 
   return productDiv;
 }
+
